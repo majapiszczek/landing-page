@@ -1,5 +1,13 @@
 :root {
-  --branding-color: rgba(31, 32, 53);
+  --branding-color: rgb(27, 23, 37);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 30px;
 }
 
 img {
@@ -7,6 +15,30 @@ img {
   height: auto;
 }
 
-header img {
+.hero,
+.navbar-brand {
+  background: linear-gradient(
+    to left top,
+    rgba(27, 23, 37, 1),
+    rgba(27, 23, 37, 0.8)
+  );
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.logo {
   width: 40px;
+  background: transparent;
+  margin: 0 18px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
