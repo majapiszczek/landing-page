@@ -13,6 +13,46 @@ section {
 img {
   max-width: 100%;
   height: auto;
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
+
+h1 {
+  font-size: 58px;
+  color: rgb(255, 255, 255);
+}
+
+h1 div {
+  color: rgb(249, 202, 79);
+}
+
+p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  background-color: rgb(185, 42, 38);
+  border: 1px solid rgb(185, 42, 38);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding: 16px 32px;
+}
+
+h4 {
+  font-size: 48px;
+}
+
+.first h4 {
+  color: rgb(249, 202, 79);
+}
+
+.second h4 {
+  color: rgb(78, 182, 172);
+}
+
+.col {
+  max-width: 100px;
 }
 
 .hero,
@@ -22,6 +62,12 @@ img {
     rgba(27, 23, 37, 1),
     rgba(27, 23, 37, 0.8)
   );
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-right: 0;
 }
 
 .nav-link {
