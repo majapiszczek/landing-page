@@ -1,13 +1,21 @@
 :root {
-  --branding-color: rgb(34, 29, 47);
+  --branding-color-dark-blue: rgb(34, 29, 47);
+  --branding-color-yellow: rgb(249, 202, 79);
+  --branding-color-light-blue: rgb(78, 182, 172);
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  color: var(--branding-color-dark-blue);
 }
 
 section {
   padding: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -16,7 +24,16 @@ h1 {
 }
 
 h1 div {
-  color: rgb(249, 202, 79);
+  color: var(--branding-color-yellow);
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h5 {
+  color: var(--branding-color-yellow);
+  font-size: 14px;
 }
 
 p {
@@ -37,11 +54,11 @@ h4 {
 }
 
 .first h4 {
-  color: rgb(249, 202, 79);
+  color: var(--branding-color-yellow);
 }
 
 .second h4 {
-  color: rgb(78, 182, 172);
+  color: var(--branding-color-light-blue);
 }
 
 .col {
@@ -50,13 +67,19 @@ h4 {
 
 .hero,
 .navbar-brand {
-  background-color: var(--branding-color);
+  background-color: var(--branding-color-dark-blue);
 }
 
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-right: 0;
+}
+
+.logo {
+  width: 40px;
+  background: transparent;
+  margin: 0 18px;
 }
 
 .nav-link {
@@ -68,19 +91,8 @@ h4 {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-.logo {
-  width: 40px;
-  background: transparent;
-  margin: 0 18px;
-}
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .hero-images {
@@ -96,7 +108,7 @@ img {
 }
 
 .hero-img-two {
-  border: 4px solid var(--branding-color);
+  border: 4px solid var(--branding-color-dark-blue);
   border-radius: 16px;
 }
 
@@ -110,4 +122,37 @@ img {
 .image-bottom {
   grid-column: 4 / -1;
   grid-row: 1;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex div {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 200px;
+}
+
+.main div {
+  margin: 50px 20px;
+}
+
+.main i {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--branding-color-light-blue);
+}
+
+.main p {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.flex div:hover {
+  background-color: var(--branding-color-dark-blue);
+  color: white;
+  transform: scale(1.1);
+  transition: all 150ms ease-in-out;
 }
