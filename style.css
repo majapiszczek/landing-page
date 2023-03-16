@@ -222,6 +222,10 @@ h4 {
   border: none;
 }
 
+.statistics {
+  padding: 100px;
+}
+
 .statistics p {
   color: rgb(0, 0, 0, 0.2);
 }
@@ -232,6 +236,11 @@ h4 {
 
 .statistics .chart {
   padding: 50px;
+}
+
+.d-md-grid {
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
 
 .footer li {
@@ -261,4 +270,82 @@ h4 {
   transform: scale(1.1);
   transition: all 150ms ease-in-out;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer img {
+    width: 50px;
+  }
+
+  .footer li,
+  .footer p {
+    font-size: 10px;
+  }
+
+  .footer h6 {
+    font-size: 12px;
+  }
+
+  .footer input {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .footer button {
+    padding: 4px 18px;
+    font-size: 14px;
+  }
+
+  .statistics .row {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 34px;
+  }
+
+  .reviews p {
+    display: none;
+  }
+
+  .statistics,
+  .statistics .info {
+    padding: 20px;
+  }
+
+  .statistics .chart {
+    display: none;
+  }
+
+  .main-three h3 {
+    width: 200px;
+  }
+
+  .hero .row {
+    width: 300px;
+  }
+
+  .footer div {
+    padding: 0;
+    text-align: center;
+    margin: 40px;
+  }
+
+  .footer li {
+    padding: 0;
+  }
 }
