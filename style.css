@@ -176,6 +176,37 @@ h4 {
   max-width: 400px;
 }
 
+.experience {
+  background-image: url(/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--branding-color-dark-blue);
+}
+
+.experience h3 {
+  color: white;
+}
+
+.experience h6 {
+  color: white;
+  font-weight: 700;
+}
+
+.experience i {
+  color: white;
+  border: 1px solid var(--branding-color-light-blue);
+  background-color: var(--branding-color-light-blue);
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.experience p {
+  font-size: 14px;
+}
+
 .flex div:hover {
   background-color: var(--branding-color-dark-blue);
   color: white;
