@@ -108,7 +108,7 @@
       <div class="main-one text-center">
         <h5>Quick Search</h5>
         <h3>Try a quick search for San Francisco</h3>
-        <div class="flex">
+        <div class="d-flex justify-content-center flex">
           <div>
             <i class="fa-solid fa-sink"></i>
             <h6>Bathroom Remodel Contractors</h6>
@@ -131,8 +131,12 @@
       <div class="main-two text-center">
         <h5>Find Professionals</h5>
         <h3>Find construction professionals you can trust!</h3>
-        <input type="search" name="city" id="city" />
-        <div class="flex">
+        <select name="city" id="city">
+          <option value="san-francisco">San Francisco</option>
+          <option value="los-angeles">Los Angeles</option>
+          <option value="san-diego">San Diego</option>
+        </select>
+        <div class="d-flex justify-content-center flex">
           <div>
             <i class="fa-solid fa-user-gear"></i>
 
@@ -149,13 +153,17 @@
         </div>
       </div>
       <div class="main-three">
-        <h5>Verified Reviews</h5>
-        <h3>Construction Co. has verified reviews</h3>
-        <p>
-          A marketplace for finding construction professionals to hire for a
-          home renovation project.
-        </p>
-        <div class="flex">
+        <div class="justify-content-between align-items-center reviews">
+          <div>
+            <h5>Verified Reviews</h5>
+            <h3>Construction Co. has verified reviews</h3>
+          </div>
+          <p>
+            A marketplace for finding construction professionals to hire for a
+            home renovation project.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
           <div>
             <i class="fa-solid fa-stamp"></i>
             <h6>Approved Permit</h6>

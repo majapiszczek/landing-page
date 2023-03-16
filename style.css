@@ -29,6 +29,7 @@ h1 div {
 
 h3 {
   font-weight: 700;
+  font-size: 52px;
 }
 
 h5 {
@@ -47,6 +48,14 @@ button {
   border-radius: 10px;
   color: rgb(255, 255, 255);
   padding: 16px 32px;
+}
+
+select {
+  margin: 20px;
+  padding: 16px 38px;
+  background-color: rgb(0, 0, 0, 0.1);
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 h4 {
@@ -124,16 +133,20 @@ h4 {
   grid-row: 1;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
-.flex div {
+.d-flex div {
   border: 1px solid rgb(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 40px;
   max-width: 200px;
+}
+
+.main-three .flex div {
+  padding: 20px;
+  max-height: 400px;
+}
+
+.main {
+  margin-top: 50px;
 }
 
 .main div {
@@ -148,6 +161,19 @@ h4 {
 
 .main p {
   color: rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.main-three h3 {
+  width: 500px;
+}
+
+.reviews {
+  display: flex;
+}
+
+.reviews p {
+  max-width: 400px;
 }
 
 .flex div:hover {
@@ -155,4 +181,5 @@ h4 {
   color: white;
   transform: scale(1.1);
   transition: all 150ms ease-in-out;
+  cursor: pointer;
 }
