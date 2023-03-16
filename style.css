@@ -47,7 +47,8 @@ button {
   border: 1px solid rgb(185, 42, 38);
   border-radius: 10px;
   color: rgb(255, 255, 255);
-  padding: 16px 32px;
+  padding: 16px 36px;
+  margin: 20px 0;
 }
 
 select {
@@ -56,6 +57,12 @@ select {
   background-color: rgb(0, 0, 0, 0.1);
   border: 1px solid rgb(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+input {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 h4 {
@@ -75,7 +82,8 @@ h4 {
 }
 
 .hero,
-.navbar-brand {
+.navbar-brand,
+.footer {
   background-color: var(--branding-color-dark-blue);
 }
 
@@ -184,7 +192,8 @@ h4 {
   background-color: var(--branding-color-dark-blue);
 }
 
-.experience h3 {
+.experience h3,
+.footer h6 {
   color: white;
 }
 
@@ -203,11 +212,13 @@ h4 {
   margin-bottom: 30px;
 }
 
-.experience p {
+.experience p,
+.footer p {
   font-size: 14px;
 }
 
-.statistics .d-flex div {
+.statistics .d-flex div,
+.footer div {
   border: none;
 }
 
@@ -221,6 +232,27 @@ h4 {
 
 .statistics .chart {
   padding: 50px;
+}
+
+.footer li {
+  color: rgba(255, 255, 255, 0.8);
+  list-style: none;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.footer ul {
+  padding: 20px 0;
+}
+
+.footer div {
+  padding: 10px;
+}
+
+.footer img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
 .flex div:hover {
