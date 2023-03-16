@@ -207,6 +207,22 @@ h4 {
   font-size: 14px;
 }
 
+.statistics .d-flex div {
+  border: none;
+}
+
+.statistics p {
+  color: rgb(0, 0, 0, 0.2);
+}
+
+.statistics .info {
+  padding: 50px 150px 0 0;
+}
+
+.statistics .chart {
+  padding: 50px;
+}
+
 .flex div:hover {
   background-color: var(--branding-color-dark-blue);
   color: white;
