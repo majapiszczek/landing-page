@@ -81,7 +81,7 @@
             <h4>10+</h4>
             <p>Years of Experience</p>
           </div>
-          <div class="col second ms-5">
+          <div class="col second">
             <h4>300</h4>
             <p>Service Provided</p>
           </div>
@@ -109,20 +109,20 @@
         <h5>Quick Search</h5>
         <h3>Try a quick search for San Francisco</h3>
         <div class="d-sm-block d-md-flex justify-content-center flex">
-          <div>
+          <div class="box">
             <i class="fa-solid fa-sink"></i>
             <h6>Bathroom Remodel Contractors</h6>
           </div>
 
-          <div>
+          <div class="box">
             <i class="fa-solid fa-hammer"></i>
             <h6>Roofers</h6>
           </div>
-          <div>
+          <div class="box">
             <i class="fa-solid fa-pen-ruler"></i>
             <h6>Remodeling Architects</h6>
           </div>
-          <div>
+          <div class="box">
             <i class="fa-solid fa-person"></i>
             <h6>Civil & Structural Engineers</h6>
           </div>
@@ -137,44 +137,40 @@
           <option value="san-diego">San Diego</option>
         </select>
         <div class="d-sm-block d-md-flex justify-content-center flex">
-          <div>
+          <div class="box">
             <i class="fa-solid fa-user-gear"></i>
 
             <h6>General Contractors</h6>
           </div>
-          <div>
+          <div class="box">
             <i class="fa-solid fa-compass-drafting"></i>
             <h6>Architects & Designers</h6>
           </div>
-          <div>
+          <div class="box">
             <i class="fa-solid fa-helmet-safety"></i>
             <h6>Engineers</h6>
           </div>
         </div>
       </div>
       <div class="main-three">
-        <div class="justify-content-between align-items-center reviews">
+        <div class="reviews">
           <div>
             <h5>Verified Reviews</h5>
             <h3>Construction Co. has verified reviews</h3>
           </div>
-          <p class="d-sm-none d-md-block">
-            A marketplace for finding construction professionals to hire for a
-            home renovation project.
-          </p>
         </div>
         <div class="d-md-grid d-lg-flex justify-content-center">
-          <div>
+          <div class="box">
             <i class="fa-solid fa-stamp"></i>
             <h6>Approved Permit</h6>
             <p>We start with an approved city building permit.</p>
           </div>
-          <div>
+          <div class="box">
             <i class="fa-solid fa-house-chimney"></i>
             <h6>Homeowner</h6>
             <p>We contact the homeowner who contracted the work.</p>
           </div>
-          <div>
+          <div class="box">
             <i class="fa-solid fa-thumbs-up"></i>
             <h6>Verified Review</h6>
             <p>
@@ -182,7 +178,7 @@
               performed permitted job.
             </p>
           </div>
-          <div>
+          <div class="box">
             <i class="fa-solid fa-handshake"></i>
             <h6>Increase Trust</h6>
             <p>
@@ -245,7 +241,7 @@
     </section>
     <section class="footer d-sm-grid d-md-flex justify-content-around">
       <div>
-        <img src="/images/logo.png" alt="logo" />
+        <img src="/images/logo.png" alt="logo" class="logo" />
         <p>201 Spear Street, STE 1100</p>
         <p>San Francisco California 94105</p>
       </div>
@@ -270,13 +266,15 @@
       </div>
       <div>
         <h6>Subscribe Now</h6>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email Address"
-        />
-        <button>For Professionals</button>
+        <form>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <button>For Professionals</button>
+        </form>
       </div>
     </section>
   </body>

@@ -4,13 +4,17 @@
   --branding-color-light-blue: rgb(78, 182, 172);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: var(--branding-color-dark-blue);
 }
 
 section {
-  padding: 30px;
+  padding: 30px 80px;
 }
 
 img {
@@ -34,7 +38,7 @@ h3 {
 
 h5 {
   color: var(--branding-color-yellow);
-  font-size: 14px;
+  font-size: 20px;
 }
 
 p {
@@ -94,14 +98,23 @@ h4 {
 }
 
 .logo {
-  width: 40px;
-  background: transparent;
-  margin: 0 18px;
+  width: 100px;
+  margin: 0 54px;
 }
 
 .nav-link {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
+  margin-right: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.navbar-collapse {
+  margin: 0 50px;
 }
 
 .navbar-toggler {
@@ -166,8 +179,12 @@ h4 {
   color: var(--branding-color-light-blue);
 }
 
+i.fa-person {
+  font-size: 38px;
+}
+
 .main p {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
 }
 
@@ -175,12 +192,16 @@ h4 {
   width: 500px;
 }
 
-.reviews {
-  display: flex;
+div.box {
+  width: 300px;
 }
 
-.reviews p {
-  max-width: 400px;
+select {
+  background-color: white;
+}
+
+.reviews {
+  display: flex;
 }
 
 .experience {
@@ -226,7 +247,7 @@ h4 {
 }
 
 .statistics p {
-  color: rgb(0, 0, 0, 0.2);
+  color: rgb(0, 0, 0, 0.4);
 }
 
 .statistics .info {
@@ -263,6 +284,12 @@ h4 {
   margin: 0 auto 20px auto;
 }
 
+.footer input,
+.footer button {
+  padding: 10px;
+  margin-right: 14px;
+}
+
 .flex div:hover {
   background-color: var(--branding-color-dark-blue);
   color: white;
@@ -274,10 +301,6 @@ h4 {
 @media (max-width: 900px) {
   .footer {
     padding: 10px;
-  }
-
-  .footer img {
-    width: 50px;
   }
 
   .footer li,
